@@ -40,99 +40,111 @@ function hashString(str: string): number {
 }
 
 const PROBLEMS = [
-  "The current solutions are too complex and fragmented, making it hard for users to achieve their goals efficiently.",
-  "Users struggle with inefficient workflows and lack a centralized platform to manage their core tasks.",
-  "There is a significant gap in the market for a streamlined, user-friendly approach to this specific challenge.",
-  "Existing tools lack the necessary flexibility and modern user experience required by today's demanding users.",
-  "Manual processes and outdated software are causing major bottlenecks and reducing overall productivity."
+  "Traditional solutions rely on fragmented toolchains and outdated legacy systems, resulting in immense cognitive overhead and workflow friction. Teams lose hours context-switching between disjointed applications, leading to data silos, miscommunication, and severely reduced time-to-market. There is a desperate need for a unified, high-performance ecosystem that centralizes operations and respects the user's focus.",
+  "The current market offerings are either overly simplistic, lacking the necessary depth for power users, or excessively bloated, alienating everyday consumers. This polarization leaves a massive segment of the market unserved: users who require robust, enterprise-grade capabilities wrapped in an intuitive, consumer-grade user interface. The friction in onboarding and daily usage remains a critical bottleneck for adoption.",
+  "Data fragmentation and lack of real-time synchronization cripple decision-making. Users are forced to make high-stakes choices based on stale or incomplete information scattered across multiple platforms. The absence of a single source of truth not only leads to costly errors but also prevents organizations from leveraging predictive analytics and machine learning to proactively address their challenges.",
+  "Security and compliance concerns have traditionally stifled innovation in this space, forcing users to rely on slow, highly-restrictive legacy portals. The challenge is balancing airtight, zero-trust security architecture with a frictionless, modern user experience. Currently, users are paying a heavy tax in productivity to maintain compliance, leading to shadow IT and compromised security postures.",
+  "Manual, repetitive tasks consume a disproportionate amount of human capital, stifling creativity and strategic thinking. Existing automation tools are often too rigid, requiring significant engineering resources to set up and maintain. Users need a solution that democratizes automation, allowing non-technical stakeholders to build intelligent workflows that adapt dynamically to their changing needs."
 ];
 
 const AUDIENCES = [
-  "Small business owners and freelancers who need an affordable, easy-to-use solution.",
-  "Enterprise teams and managers looking for scalable, secure, and robust workflows.",
-  "Tech-savvy early adopters and creators who value clean design and seamless integrations.",
-  "Everyday consumers seeking a simplified, mobile-first experience for their daily tasks.",
-  "Professionals and domain experts who require specialized tools without the steep learning curve."
+  "Visionary founders, early-stage startups, and agile product teams who demand rapid iteration, high-performance tooling, and an uncompromising aesthetic standard. They value speed, modularity, and systems that scale effortlessly as they find product-market fit.",
+  "Forward-thinking enterprise leaders, CTOs, and operations managers operating in complex, heavily regulated environments. They require unparalleled security, comprehensive audit trails, and seamless integration with existing legacy infrastructure without sacrificing modern UX.",
+  "Digital creators, independent professionals, and the gig-economy workforce who treat their software as an extension of their craft. They have high expectations for design fidelity, mobile accessibility, and tools that instantly map to their unique, non-linear creative processes.",
+  "Data-driven analysts, researchers, and domain experts who need to extract actionable insights from massive, unstructured datasets. They prioritize robust filtering, advanced visualization capabilities, and the ability to run complex queries without relying on an engineering team.",
+  "Everyday consumers and non-technical end-users who expect consumer-grade simplicity, zero onboarding friction, and instant gratification. They need a platform that abstracts away technical complexity and delivers immediate value from the very first interaction."
 ];
 
 const FEATURE_POOLS = [
   [
-    "Intuitive dashboard with real-time data visualization",
-    "Seamless third-party API integrations",
-    "Automated reporting and data exports",
-    "Customizable user profiles and preferences"
+    "Real-time, interactive command center with high-fidelity data visualization and customizable widget layouts",
+    "Deep, bi-directional API integrations with industry-standard platforms (Slack, Jira, GitHub)",
+    "Automated, intelligent reporting engine with scheduled delivery and zero-config export pipelines",
+    "Granular, role-based access control (RBAC) with custom permission matrices and audit logging",
+    "Predictive analytics module leveraging historical data to forecast trends and identify anomalies"
   ],
   [
-    "Smart search and advanced filtering capabilities",
-    "Collaborative workspace for team sharing",
-    "Push notifications and instant alerts",
-    "Secure authentication and role-based access control"
+    "Fuzzy-search engine with contextual awareness and instant, millisecond-latency results filtering",
+    "Real-time collaborative canvas allowing multiple concurrent users with live cursor tracking",
+    "Intelligent push notification routing engine to prevent alert fatigue and highlight critical events",
+    "Zero-trust security architecture featuring biometric authentication and hardware-key support",
+    "Automated workflow builder with a drag-and-drop node interface and custom webhook triggers"
   ],
   [
-    "Drag-and-drop interface for rapid configuration",
-    "Offline mode with background synchronization",
-    "Comprehensive analytics and usage tracking",
-    "Interactive onboarding wizard for new users"
+    "Visual, block-based editor enabling rapid, no-code configuration of complex business logic",
+    "Robust offline-first architecture with conflict-free replicated data types (CRDTs) for seamless syncing",
+    "Comprehensive behavioral analytics tracking with session replay and conversion funnel mapping",
+    "Context-aware, interactive onboarding flow utilizing progressive disclosure to minimize cognitive load",
+    "Extensible plugin ecosystem allowing third-party developers to build and distribute custom modules"
   ],
   [
-    "AI-powered recommendations and insights",
-    "Multi-platform support (web, mobile, desktop)",
-    "Built-in chat and communication tools",
-    "One-click deployment and sharing options"
+    "Proprietary AI co-pilot providing contextual recommendations, code generation, and automated insights",
+    "Native, fluid experiences across iOS, Android, and Desktop via a unified, high-performance codebase",
+    "Integrated, low-latency communication layer supporting rich text, voice, and threaded conversations",
+    "One-click deployment pipeline with automated staging environments and zero-downtime rollbacks",
+    "Dynamic, algorithmic content feed optimized for user engagement and personalized discovery"
   ]
 ];
 
 const ARCHITECTURE_POOLS = [
   [
-    "Frontend: React with Vite and Tailwind CSS for rapid UI development",
-    "Backend: Node.js with Express for scalable API endpoints",
-    "Database: PostgreSQL for reliable relational data storage",
-    "Hosting: Vercel for frontend and Render for backend services"
+    "Frontend: Next.js 14 with React Server Components (RSC) and Tailwind CSS for optimal edge delivery",
+    "Backend: Go microservices orchestrated via Kubernetes for maximum throughput and low latency",
+    "Database: PlanetScale (Serverless MySQL) for infinite horizontal scaling and branch-based schema management",
+    "Infrastructure: Vercel for the presentation layer, AWS (EKS) for compute, and Cloudflare for edge security",
+    "State: Zustand for lightweight client state, React Query for server state caching and invalidation"
   ],
   [
-    "Frontend: Next.js with Server-Side Rendering for SEO optimization",
-    "State Management: Zustand or Redux for predictable state",
-    "Database: MongoDB for flexible document-based storage",
-    "Authentication: NextAuth.js with OAuth providers"
+    "Frontend: React SPA powered by Vite, utilizing Framer Motion for highly fluid, 60fps micro-interactions",
+    "Backend: Node.js (NestJS) providing a strongly-typed, modular, and testable API architecture",
+    "Database: PostgreSQL with Prisma ORM for type-safe database interactions and complex relational queries",
+    "Authentication: Clerk for secure, drop-in user management, MFA, and B2B organizational structures",
+    "Caching: Redis cluster for session management, rate limiting, and sub-millisecond data retrieval"
   ],
   [
-    "Frontend: Vue 3 or Svelte for lightweight, reactive components",
-    "API Layer: GraphQL with Apollo Server for precise data fetching",
-    "Caching: Redis for high-performance data retrieval",
-    "Infrastructure: AWS Serverless stack (Lambda, API Gateway)"
+    "Frontend: SvelteKit offering a zero-JS-by-default approach, compiling away framework overhead",
+    "API Layer: Apollo GraphQL federation, unifying multiple domain services into a single, cohesive graph",
+    "Database: MongoDB Atlas for highly flexible, document-oriented storage accommodating rapid schema evolution",
+    "Infrastructure: AWS Serverless stack (Lambda, API Gateway, DynamoDB) for true pay-per-use scaling",
+    "Observability: Datadog for full-stack distributed tracing, log aggregation, and real-time anomaly detection"
   ],
   [
-    "Frontend: React Native for cross-platform mobile support",
-    "Backend as a Service: Supabase or Firebase for rapid backend deployment",
-    "Storage: Cloud Storage buckets for user-generated content",
-    "Analytics: PostHog or Mixpanel for event tracking"
+    "Frontend: React Native with Expo (New Architecture) delivering truly native performance on iOS and Android",
+    "Backend as a Service (BaaS): Supabase providing instant Postgres APIs, real-time subscriptions, and edge functions",
+    "Storage: AWS S3 with CloudFront CDN for lightning-fast, globally distributed media asset delivery",
+    "Analytics: PostHog for open-source, privacy-compliant product analytics and feature flag management",
+    "Payments: Stripe Billing integration for handling complex, tiered SaaS subscription models and usage-based pricing"
   ]
 ];
 
 const SCREENS_POOLS = [
   [
-    "Landing Page: High-converting hero section with call-to-action",
-    "Dashboard: Overview of key metrics and recent activity",
-    "Settings: User account management and preferences",
-    "Details View: In-depth information for selected items"
+    "Command Center: High-density, customizable dashboard featuring real-time telemetry and vital system metrics",
+    "Global Search: Command-K interface (⌘+K) for instant, keyboard-driven navigation and action execution",
+    "Resource Hub: Detailed, deeply-linked view for managing individual entities with inline editing capabilities",
+    "Access Management: Granular control panel for defining roles, managing teams, and reviewing security logs",
+    "Integration Registry: Marketplace interface for connecting and configuring third-party applications"
   ],
   [
-    "Authentication: Login, register, and password recovery",
-    "Main Feed: Infinite scrolling list of relevant content",
-    "Profile: User portfolio and activity history",
-    "Checkout/Pricing: Subscription options and payment flow"
+    "Auth Gateway: Frictionless onboarding flow featuring social SSO, magic links, and biometric prompts",
+    "The Feed: Infinite-scrolling, algorithmically curated stream of content with optimistic UI updates",
+    "Creator Profile: Public-facing portfolio showcasing user activity, achievements, and curated collections",
+    "Interactive Canvas: The core workspace where users create, edit, and manipulate their primary assets",
+    "Billing Portal: Transparent subscription management, invoice history, and seat-based licensing controls"
   ],
   [
-    "Onboarding: Step-by-step tutorial for new users",
-    "Workspace: Main canvas or editor interface",
-    "Analytics: Charts and graphs showing performance",
-    "Notifications: History of alerts and messages"
+    "Welcome Wizard: Multi-step, personalized onboarding sequence designed to capture intent and tailor the experience",
+    "Mission Control: Project management interface featuring Kanban boards, Gantt charts, and timeline views",
+    "Analytics Deep-Dive: Comprehensive reporting suite with interactive charts, date-range pickers, and CSV exports",
+    "Notification Center: Centralized inbox for system alerts, mentions, and actionable workflow requests",
+    "Developer Settings: Advanced configuration area for generating API keys, configuring webhooks, and reviewing API logs"
   ],
   [
-    "Home: Personalized content discovery and recommendations",
-    "Search: Advanced query interface with filters",
-    "Library: Saved collections and user-generated resources",
-    "Admin Panel: System overview and moderation tools"
+    "Discovery Engine: Personalized storefront or content directory utilizing machine learning for recommendations",
+    "Advanced Filter Interface: Complex querying tool allowing users to combine multiple parameters and save custom views",
+    "Media Library: Grid-based asset manager with drag-and-drop uploading, bulk actions, and metadata tagging",
+    "Moderation Queue: Admin-facing interface for reviewing flagged content, managing user reports, and applying penalties",
+    "System Status: Public-facing dashboard communicating uptime, ongoing incidents, and scheduled maintenance windows"
   ]
 ];
 
